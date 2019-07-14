@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    "shallow": true,
+    "render": true,
+    "mount": true,
+    "expect": true
+  },
+  "plugins": [
+    "react-hooks",
+    "jsx-a11y"
+  ],
+  "extends": [
+    "plugin:jsx-a11y/recommended",
+    "airbnb"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "import/no-extraneous-dependencies": [
+      "error", { "devDependencies": [ "**/testSetup/*" ] }
+    ]
+  }
+}
