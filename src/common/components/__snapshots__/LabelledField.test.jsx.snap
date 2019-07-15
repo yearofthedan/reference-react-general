@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LabelledField /> renders to its snapshot 1`] = `
+Array [
+  <label
+    htmlFor="some-id"
+  >
+    Some label
+  </label>,
+  <input
+    id="some-id"
+    onChange={[MockFunction]}
+    type="number"
+    value="some-value"
+  />,
+]
+`;

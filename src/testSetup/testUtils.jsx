@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../common/theme';
+import ProfileProvider from "../profileProvider/ProfileProvider";
 
 const AllTheProviders = ({ children }) => (
   <ThemeProvider theme={theme}>
-    {children}
+    <ProfileProvider id="some-id">
+      {children}
+    </ProfileProvider>
   </ThemeProvider>
 );
 
